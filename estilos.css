@@ -1,0 +1,405 @@
+@keyframes slideInFromLeft {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromRigth {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 10vh;
+    border-radius: 0% 0% 18% 18%;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 .5rem 4rem rgba(0, 174, 255, 0.842);
+    animation: slideInFromRigth 2s ease-out;
+}
+header img{
+    width: 15vw;
+}
+
+#izquierda{
+    display: flex;
+    align-items: center;
+    width:67vw;
+}
+#izquierda img{
+    width: 40%;
+}
+#derecha{
+    display: flex;
+    align-items: center;
+    margin: 10%;
+    padding: 0;
+}
+body{
+    background-image: url(/imagenes/Fondo.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    border-radius: 18% 18% 0% 0%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 .5rem 4rem rgb(0, 255, 255);
+}
+footer img{
+    width: 15vw;
+}
+footer ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+    list-style:none;
+}
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-top: 2%;
+    border-radius: 10%;
+    box-shadow: 0 0.5rem 1rem rgb(0, 255, 221);
+    animation: fadeIn 2s ease-out;
+
+}
+  
+.slide {
+    flex: 0 0 auto;
+    width: 100%;
+    scroll-snap-align: start;
+}
+  
+.slide img {
+    width: 100%;
+    height: auto;
+}
+@font-face {
+    font-family: Bungee;
+    src: url(/fuentes/Bungee/Bungee-Regular.ttf);
+}
+@font-face {
+    font-family: Red_Hat_Display;
+    src: url(/fuentes/Bungee/Bungee-Regular.ttf);
+    font-weight: 600;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    height: 140vh;
+}
+
+h1{
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: Bungee;
+    color: rgb(80, 235, 235);
+    box-shadow: 0 .5rem 4rem rgb(255, 255, 255);
+    margin-top: 5%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10%;
+    text-align: center;
+    border-radius: 10px;
+    align-self: center;
+    animation: fadeIn 2s ease-out;
+}
+.productos{
+    font-family: Red_Hat_Display;
+    color: white;
+    font-size: 60%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    row-gap: 2%;
+    column-gap: 2%;
+}
+.productos div img{
+    width: 30vw;
+}
+.bannernegro img{
+    width: 100vw;
+    border-radius: 20px;
+    box-shadow: 0 0.5rem 1rem rgb(0, 255, 221);
+}
+.bannernegro{
+    padding-top: 6%;
+}
+.productos div{
+    padding: 6%;
+    padding-left: 17%;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(173, 160, 160);
+    border-radius: 10%;
+    text-align: left;
+    box-shadow: 0 0.5rem 1rem rgb(0, 0, 0);
+}
+h3{
+    margin-top: 3%;
+}
+
+.boton-compra{
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    box-shadow: 0 .5rem 1rem rgb(0, 255, 234);
+}
+
+.bannernegro {
+    animation: slideInFromLeft 3s ease-out;
+}
+
+.productosnuevos {
+    animation: fadeIn 2s ease-out;
+}
+.boton-compras{
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+    box-shadow: 0 .5rem 1rem rgb(0, 255, 234);
+    align-items: center;
+}
+.productos2 div{
+    padding: 6%;
+    padding-left: 3%;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(173, 160, 160);
+    border-radius: 10%;
+    text-align: center;
+    box-shadow: 0 0.5rem 1rem rgb(0, 0, 0);
+}
+.productosnuevos2 {
+    animation: fadeIn 2s ease-out;
+}
+.productos2 div img{
+    width: 30vw;
+}
+.productos2{
+    font-family: Red_Hat_Display;
+    color: white;
+    font-size: 60%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    row-gap: 2%;
+    column-gap: 2%;
+    padding-top: 10%;
+}
+.main-container2 h1{
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: Bungee;
+    color: rgb(80, 235, 235);
+    box-shadow: 0 .5rem 4rem rgb(255, 255, 255);
+    margin-top: 5%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10%;
+    text-align: center;
+    border-radius: 10px;
+    align-self: center;
+    animation: fadeIn 2s ease-out;
+    margin-left: 32%;
+}
+.formulario{
+    width: 80%;
+    height: 20%;
+    background-color: aliceblue ;
+    border-radius: 30px;
+    margin: 10%;
+}
+.contact2 img{
+    width: 12vw;
+    padding-top: 3vh;
+}
+.contact2{
+    margin-top: 1%;
+    
+}
+#iconos2{
+    display:flex;
+    justify-content:center;
+    align-items:start;
+    flex-direction: row;
+    column-gap:17%;
+    background-color: black;
+    height:20vh;
+    box-shadow: 0 .5rem 2rem rgb(255, 255, 255);
+    animation: slideInFromLeft 3s ease-out;
+}
+.contact img{
+    width: 12vw;
+    padding-top: 3vh;
+}
+.contact{
+    margin-top: 1%;
+    
+}
+#iconos{
+    display:flex;
+    justify-content:center;
+    align-items:start;
+    flex-direction: row;
+    column-gap:17%;
+    background-color: black;
+    height:20vh;
+    box-shadow: 0 .5rem 2rem rgb(255, 255, 255);
+    animation: slideInFromLeft 3s ease-out;
+}
+main {
+    margin-bottom: 10%;
+}
+.main-container3{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.945);
+    margin-top: 10%;
+}
+.comprar-checkbox {
+    display: flex;
+    align-items: center;
+    width: 95%;
+}
+
+.comprar-checkbox input[type="checkbox"] {
+    margin-right: 8%;
+    
+}
+#comprar{
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: Bungee;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 .5rem 4rem rgb(0, 255, 234);
+    margin-top: 5%;
+    text-align: center;
+    background-color: rgb(0, 217, 255);
+    border-radius: 10%;
+    text-align: center;
+    border-radius: 10px;
+    align-self: center;
+    animation: fadeIn 2s ease-out;
+}
+.infoproducto{
+    background-color: rgba(0, 0, 0, 0.753);
+    width: 80vw;
+    height: 92%;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 20px;
+    border: 2px solid rgb(127, 255, 238);
+    box-shadow: 0 .5rem 4rem rgb(0, 0, 0);
+}
+.carousel3 {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    border-radius: 20px;
+    box-shadow: 0 0.5rem 1rem rgb(0, 0, 0);
+    animation: fadeIn 2s ease-out;
+
+}
+  
+.slide3 {
+    flex: 0 0 auto;
+    width: 100%;
+    scroll-snap-align: start;
+}
+  
+.slide3 img {
+    width: 75vw;
+    height: 35vh;
+    margin: 2.5%;
+    border-radius: 10px;
+}
+#infopx{
+    color: white;
+    font-family: Bungee;
+    margin-top: 4%;
+    margin-left: 4%;
+    font-size: larger;
+}
+#infopx2{
+    color: white;
+    font-family: Bungee;
+    margin-top: 4%;
+    margin-left: 4%;
+    font-size: x-large;
+}
+#comprar2{
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: Bungee;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 .5rem 4rem rgb(0, 255, 234);
+    margin-top: 5%;
+    text-align: center;
+    background-color: rgb(0, 217, 255);
+    border-radius: 10%;
+    text-align: center;
+    border-radius: 10px;
+    align-self: center;
+    animation: fadeIn 2s ease-out;
+}
+#xdxd{
+    display:grid;
+    grid-template-columns:44% 50%;
+    margin: 4%;
+}
+.botoncomprar{
+    color: white;
+    text-decoration: none;
+    font-family: Bungee;
+    margin-left: 20%;
+}
+.comprarx{
+    background-color: black;
+    width: 70vw;
+    height: 7vh;
+    margin-left: 6%;
+    display:flex;
+    align-items:center;
+    box-shadow: 0 .5rem 1rem rgb(253, 255, 255);
+}
+h5{
+    color: rgba(255, 255, 255, 0.749);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    margin: 5%;
+}
+.mainproductos{
+    height: 90vh;
+}
