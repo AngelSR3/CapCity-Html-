@@ -1,3 +1,21 @@
+.mensaje-dispositivo {
+    display: none;
+    background-color: rgba(135, 7, 7, 0.881);
+    color: white;
+    padding: 20%; 
+    margin-top: 3%;
+    text-align: center;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000;
+}
+@media (min-width: 768px) {
+    .mensaje-dispositivo {
+        display: block; 
+    }
+}
 @keyframes slideInFromLeft {
     from {
         transform: translateY(100%);
