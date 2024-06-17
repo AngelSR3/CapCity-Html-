@@ -12,10 +12,18 @@ Pagina web orientada a moviles de una tienda online de gorras
 - Página de Producto elegido: (/Capturas/Producto),(/Capturas/Producto2)
 
 
+##Diseños
+https://drive.google.com/file/d/1RiLjZWHSjbEfQr850Xyy5jrFht6xiWCV/view?usp=drive_link
+
+
+##Diapositivas
+https://www.canva.com/design/DAGIVt8UUlM/3Z-FP3OhoUiheloZPg4z_w/edit?utm_content=DAGIVt8UUlM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+
 ## Instalación
 
 1. Clona este repositorio: https://github.com/AngelSR3/PROYECTO-FILTRO_SIMANCAANGEL_REMOLINADUVAN 
-2. Abre el archivo `index.html` en tu navegador.
+2. Abre el archivo `index.html` con la extencion "live-server" en visual studio code.
 
 
 ## Tecnologías Utilizadas
@@ -31,4 +39,4 @@ Angel Simanca - [angelduvan1016@gmail.com]
 
 ## Estado del Proyecto
 
-En desarrollo / Mantenimiento / Versión 1.0 (estable)
+En desarrollo / Mantenimiento / Versión 1.1 (estable)
